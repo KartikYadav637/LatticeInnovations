@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:cardCornerRadius="30dp"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/Register"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="30dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="20dp">
+
+                <EditText
+                    android:id="@+id/Mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:hint="Mobile Number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="20dp">
+
+                <EditText
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:hint="Full Name"
+                    android:maxLength="50"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="20dp">
+
+                <Spinner
+                    android:id="@+id/Gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:entries="@array/Gender"
+                    android:textAlignment="center" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="20dp">
+
+                <EditText
+                    android:id="@+id/Dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/white"
+                    android:focusable="false"
+                    android:hint="DOB"
+                    android:inputType="date"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="20dp">
+
+                <EditText
+                    android:id="@+id/Address1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:hint="Address Line 1"
+                    android:maxLength="50"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="20dp">
+
+                <EditText
+                    android:id="@+id/Address2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:hint="Address Line 2"
+                    android:maxLength="50"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20dp">
+
+                    <EditText
+                        android:id="@+id/Pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:hint="PIN"
+                        android:inputType="number"
+                        android:maxLength="50"
+                        android:textAlignment="center"
+                        android:textSize="25dp" />
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/Check"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:maxLength="6"
+                    android:text="CHECK" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/district"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="District"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/state"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="State"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/Register"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/Register"
+        android:enabled="false"
+        android:text="Register"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
